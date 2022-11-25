@@ -1,0 +1,19 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "saref:Property" "energ:Price" "energ:SourceEnergy" "core:Building" "core:Municipality" "om:UnitOfMeasure" "saref:FeatureofInterest" "saref:Measurement" "energ:Consoumer" "adapters:Energy" ; /*classes style*/
+	"core:Building" -> "xsd:float" [ label = "energ:heatingArea" ];
+	"core:Building" -> "core:Municipality" [ label = "energ:belongsTo" ];
+	"core:Building" -> "xsd:integer" [ label = "energ:constructionYear" ];
+	"energ:Price" -> "energ:Consoumer" [ label = "energ:dependsOnConsumer" ];
+	"saref:FeatureofInterest" -> "saref:Property" [ label = "saref:hasProperty" ];
+	"adapters:Energy" -> "energ:Price" [ label = "energ:hasPrice" ];
+	"saref:Measurement" -> "om:UnitOfMeasure" [ label = "saref:isMeasuredIn" ];
+	"saref:Measurement" -> "saref:Property" [ label = "core:aboutProperty" ];
+	"core:Building" -> "xsd:string" [ label = "energ:Name" ];
+	"core:Building" -> "xsd:string" [ label = "energ:ID" ];
+	"energ:Consoumer" -> "core:Building" [ label = "energ:hasBuilding" ];
+	"saref:Measurement" -> "energ:SourceEnergy" [ label = "energ:hasSource" ];
+	"saref:Property" -> "saref:FeatureofInterest" [ label = "saref:isPropertyOf" ];
+
+}
