@@ -75,7 +75,7 @@ energ:hasPrice rdf:type owl:ObjectProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/energy#hasSource
 energ:hasSource rdf:type owl:ObjectProperty ;
-                rdfs:domain saref:Measurement ;
+                rdfs:domain adapters:Energy ;
                 rdfs:range energ:SourceEnergy ;
                 rdfs:label "has source" .
 
