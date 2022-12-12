@@ -105,32 +105,34 @@ saref:isPropertyOf rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  https://auroral.iot.linkeddata.es/def/energy#ID
-energ:ID rdf:type owl:DatatypeProperty ;
-         rdfs:domain core:Building ;
-         rdfs:range xsd:string ;
-         rdfs:label "i d" .
+###  https://auroral.iot.linkeddata.es/def/core#id
+core:id rdf:type owl:DatatypeProperty ;
+        rdfs:domain core:Building ,
+                    core:Municipality ,
+                    saref:FeatureofInterest ;
+        rdfs:range xsd:string .
 
 
-###  https://auroral.iot.linkeddata.es/def/energy#Name
-energ:Name rdf:type owl:DatatypeProperty ;
-           rdfs:domain core:Building ;
-           rdfs:range xsd:string ;
-           rdfs:label "name" .
+###  https://auroral.iot.linkeddata.es/def/core#name
+core:name rdf:type owl:DatatypeProperty ;
+          rdfs:domain core:Building ,
+                      core:Municipality ,
+                      saref:FeatureofInterest ;
+          rdfs:range xsd:string .
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#constructionYear
 energ:constructionYear rdf:type owl:DatatypeProperty ;
                        rdfs:domain core:Building ;
                        rdfs:range xsd:integer ;
-                       rdfs:label "construction year" .
+                       rdfs:label "construction Year" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#heatingArea
 energ:heatingArea rdf:type owl:DatatypeProperty ;
                   rdfs:domain core:Building ;
                   rdfs:range xsd:float ;
-                  rdfs:label "heating area" .
+                  rdfs:label "heating Area" .
 
 
 #################################################################
