@@ -61,7 +61,7 @@
 # 
 # https://auroral.iot.linkeddata.es/def/energy#hasSource
 <https://auroral.iot.linkeddata.es/def/energy#hasSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://auroral.iot.linkeddata.es/def/energy#hasSource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Measurement> .
+<https://auroral.iot.linkeddata.es/def/energy#hasSource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
 <https://auroral.iot.linkeddata.es/def/energy#hasSource> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/energy#SourceEnergy> .
 <https://auroral.iot.linkeddata.es/def/energy#hasSource> <http://www.w3.org/2000/01/rdf-schema#label> "has source" .
 # 
@@ -92,29 +92,31 @@
 # #################################################################
 # 
 # 
-# https://auroral.iot.linkeddata.es/def/energy#ID
-<https://auroral.iot.linkeddata.es/def/energy#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://auroral.iot.linkeddata.es/def/energy#ID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Building> .
-<https://auroral.iot.linkeddata.es/def/energy#ID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://auroral.iot.linkeddata.es/def/energy#ID> <http://www.w3.org/2000/01/rdf-schema#label> "i d" .
+# https://auroral.iot.linkeddata.es/def/core#id
+<https://auroral.iot.linkeddata.es/def/core#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://auroral.iot.linkeddata.es/def/core#id> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Building> .
+<https://auroral.iot.linkeddata.es/def/core#id> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Municipality> .
+<https://auroral.iot.linkeddata.es/def/core#id> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#FeatureofInterest> .
+<https://auroral.iot.linkeddata.es/def/core#id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
-# https://auroral.iot.linkeddata.es/def/energy#Name
-<https://auroral.iot.linkeddata.es/def/energy#Name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://auroral.iot.linkeddata.es/def/energy#Name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Building> .
-<https://auroral.iot.linkeddata.es/def/energy#Name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://auroral.iot.linkeddata.es/def/energy#Name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# https://auroral.iot.linkeddata.es/def/core#name
+<https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Building> .
+<https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Municipality> .
+<https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#FeatureofInterest> .
+<https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # https://auroral.iot.linkeddata.es/def/energy#constructionYear
 <https://auroral.iot.linkeddata.es/def/energy#constructionYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/energy#constructionYear> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Building> .
 <https://auroral.iot.linkeddata.es/def/energy#constructionYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://auroral.iot.linkeddata.es/def/energy#constructionYear> <http://www.w3.org/2000/01/rdf-schema#label> "construction year" .
+<https://auroral.iot.linkeddata.es/def/energy#constructionYear> <http://www.w3.org/2000/01/rdf-schema#label> "construction Year" .
 # 
 # https://auroral.iot.linkeddata.es/def/energy#heatingArea
 <https://auroral.iot.linkeddata.es/def/energy#heatingArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/energy#heatingArea> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Building> .
 <https://auroral.iot.linkeddata.es/def/energy#heatingArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<https://auroral.iot.linkeddata.es/def/energy#heatingArea> <http://www.w3.org/2000/01/rdf-schema#label> "heating area" .
+<https://auroral.iot.linkeddata.es/def/energy#heatingArea> <http://www.w3.org/2000/01/rdf-schema#label> "heating Area" .
 # 
 # 
 # 

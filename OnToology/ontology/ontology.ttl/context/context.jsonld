@@ -28,6 +28,10 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/energy#hasBuilding",
       "@type" : "@id"
     },
+    "id" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "aboutProperty" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#aboutProperty",
       "@type" : "@id"
@@ -52,12 +56,12 @@
     "Energy" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy"
     },
+    "name" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "Building" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#Building"
-    },
-    "ID" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/energy#ID",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Property" : {
       "@id" : "https://saref.etsi.org/core#Property"
@@ -79,10 +83,6 @@
     },
     "Consoumer" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/energy#Consoumer"
-    },
-    "Name" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/energy#Name",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "SourceEnergy" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/energy#SourceEnergy"
