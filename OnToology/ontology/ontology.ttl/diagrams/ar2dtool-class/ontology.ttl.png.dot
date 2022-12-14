@@ -7,13 +7,13 @@ node [shape = rectangle, color="orange"]; "saref:Property" "energ:Price" "energ:
 	"core:Building" -> "xsd:integer" [ label = "energ:constructionYear" ];
 	"energ:Price" -> "energ:Consoumer" [ label = "energ:dependsOnConsumer" ];
 	"saref:FeatureofInterest" -> "saref:Property" [ label = "saref:hasProperty" ];
+	"core:Building" -> "xsd:string" [ label = "core:name" ];
 	"adapters:Energy" -> "energ:Price" [ label = "energ:hasPrice" ];
 	"saref:Measurement" -> "om:UnitOfMeasure" [ label = "saref:isMeasuredIn" ];
 	"saref:Measurement" -> "saref:Property" [ label = "core:aboutProperty" ];
-	"core:Building" -> "xsd:string" [ label = "energ:Name" ];
-	"core:Building" -> "xsd:string" [ label = "energ:ID" ];
 	"energ:Consoumer" -> "core:Building" [ label = "energ:hasBuilding" ];
-	"saref:Measurement" -> "energ:SourceEnergy" [ label = "energ:hasSource" ];
+	"adapters:Energy" -> "energ:SourceEnergy" [ label = "energ:hasSource" ];
 	"saref:Property" -> "saref:FeatureofInterest" [ label = "saref:isPropertyOf" ];
+	"core:Building" -> "xsd:string" [ label = "core:id" ];
 
 }
