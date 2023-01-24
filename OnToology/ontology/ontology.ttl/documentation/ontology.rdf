@@ -115,7 +115,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/energy#hasSource">
-        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Measurement"/>
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Energy"/>
         <rdfs:range rdf:resource="https://auroral.iot.linkeddata.es/def/energy#SourceEnergy"/>
         <rdfs:label>has source</rdfs:label>
     </owl:ObjectProperty>
@@ -167,24 +167,26 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/energy#ID -->
+    <!-- https://auroral.iot.linkeddata.es/def/core#id -->
 
 
-    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/energy#ID">
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#id">
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Building"/>
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Municipality"/>
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#FeatureofInterest"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>i d</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/energy#Name -->
+    <!-- https://auroral.iot.linkeddata.es/def/core#name -->
 
 
-    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/energy#Name">
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#name">
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Building"/>
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Municipality"/>
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#FeatureofInterest"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>name</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -195,7 +197,7 @@
     <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/energy#constructionYear">
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>construction year</rdfs:label>
+        <rdfs:label>construction Year</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -206,7 +208,7 @@
     <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/energy#heatingArea">
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:label>heating area</rdfs:label>
+        <rdfs:label>heating Area</rdfs:label>
     </owl:DatatypeProperty>
     
 

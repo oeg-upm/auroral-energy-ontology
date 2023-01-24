@@ -67,7 +67,7 @@
 
 ###  https://auroral.iot.linkeddata.es/def/energy#hasSource
 :hasSource rdf:type owl:ObjectProperty ;
-           rdfs:domain <https://saref.etsi.org/core#Measurement> ;
+           rdfs:domain <https://auroral.iot.linkeddata.es/def/adapters#Energy> ;
            rdfs:range :SourceEnergy ;
            rdfs:label "has source" .
 
@@ -97,32 +97,34 @@
 #    Data properties
 #################################################################
 
-###  https://auroral.iot.linkeddata.es/def/energy#ID
-:ID rdf:type owl:DatatypeProperty ;
-    rdfs:domain <https://auroral.iot.linkeddata.es/def/core#Building> ;
-    rdfs:range xsd:string ;
-    rdfs:label "i d" .
+###  https://auroral.iot.linkeddata.es/def/core#id
+<https://auroral.iot.linkeddata.es/def/core#id> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <https://auroral.iot.linkeddata.es/def/core#Building> ,
+                                                            <https://auroral.iot.linkeddata.es/def/core#Municipality> ,
+                                                            <https://saref.etsi.org/core#FeatureofInterest> ;
+                                                rdfs:range xsd:string .
 
 
-###  https://auroral.iot.linkeddata.es/def/energy#Name
-:Name rdf:type owl:DatatypeProperty ;
-      rdfs:domain <https://auroral.iot.linkeddata.es/def/core#Building> ;
-      rdfs:range xsd:string ;
-      rdfs:label "name" .
+###  https://auroral.iot.linkeddata.es/def/core#name
+<https://auroral.iot.linkeddata.es/def/core#name> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <https://auroral.iot.linkeddata.es/def/core#Building> ,
+                                                              <https://auroral.iot.linkeddata.es/def/core#Municipality> ,
+                                                              <https://saref.etsi.org/core#FeatureofInterest> ;
+                                                  rdfs:range xsd:string .
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#constructionYear
 :constructionYear rdf:type owl:DatatypeProperty ;
                   rdfs:domain <https://auroral.iot.linkeddata.es/def/core#Building> ;
                   rdfs:range xsd:integer ;
-                  rdfs:label "construction year" .
+                  rdfs:label "construction Year" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#heatingArea
 :heatingArea rdf:type owl:DatatypeProperty ;
              rdfs:domain <https://auroral.iot.linkeddata.es/def/core#Building> ;
              rdfs:range xsd:float ;
-             rdfs:label "heating area" .
+             rdfs:label "heating Area" .
 
 
 #################################################################
