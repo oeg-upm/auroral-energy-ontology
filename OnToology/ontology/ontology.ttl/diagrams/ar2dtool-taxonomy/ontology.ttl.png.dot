@@ -1,10 +1,13 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "saref:Property" "energ:Price" "core:Building" "core:Municipality" "energ:MonthlyAverageEnergyPrice" "saref:FeatureofInterest" "adapters:Energy" ; /*classes style*/
-	"energ:MonthlyAverageEnergyPrice" -> "energ:Price" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "energ:CostPriceSeason" "energ:FixedAgreement" "energ:PriceAgreement" "saref:Property" "energ:VariableAgreement" "energ:Price" "core:Building" "core:Municipality" "saref:FeatureofInterest" "adapters:Energy" "energ:StandardAgreement" ; /*classes style*/
 	"core:Building" -> "saref:FeatureofInterest" [ label = "rdfs:subClassOf" ];
-	"adapters:Energy" -> "saref:Property" [ label = "rdfs:subClassOf" ];
+	"energ:FixedAgreement" -> "energ:PriceAgreement" [ label = "rdfs:subClassOf" ];
+	"energ:VariableAgreement" -> "energ:PriceAgreement" [ label = "rdfs:subClassOf" ];
 	"core:Municipality" -> "saref:FeatureofInterest" [ label = "rdfs:subClassOf" ];
+	"energ:StandardAgreement" -> "energ:PriceAgreement" [ label = "rdfs:subClassOf" ];
+	"energ:CostPriceSeason" -> "energ:Price" [ label = "rdfs:subClassOf" ];
+	"adapters:Energy" -> "saref:Property" [ label = "rdfs:subClassOf" ];
 
 }
