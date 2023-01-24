@@ -55,15 +55,27 @@ energ:belongsTo rdf:type owl:ObjectProperty ;
 ###  https://auroral.iot.linkeddata.es/def/energy#dependsOnConsumer
 energ:dependsOnConsumer rdf:type owl:ObjectProperty ;
                         rdfs:domain energ:Price ;
-                        rdfs:range energ:Consoumer ;
                         rdfs:label "depends on consumer" .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#forSeason
+energ:forSeason rdf:type owl:ObjectProperty ;
+                rdfs:domain energ:CostPriceSeason ;
+                rdfs:range energ:Season ;
+                rdfs:label "for season" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#hasBuilding
 energ:hasBuilding rdf:type owl:ObjectProperty ;
-                  rdfs:domain energ:Consoumer ;
                   rdfs:range core:Building ;
                   rdfs:label "has building" .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#hasCostPrice
+energ:hasCostPrice rdf:type owl:ObjectProperty ;
+                   rdfs:domain energ:PriceAgreement ;
+                   rdfs:range energ:CostPriceSeason ;
+                   rdfs:label "has cost price" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#hasPrice
@@ -78,6 +90,13 @@ energ:hasSource rdf:type owl:ObjectProperty ;
                 rdfs:domain adapters:Energy ;
                 rdfs:range energ:SourceEnergy ;
                 rdfs:label "has source" .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#inCurrency
+energ:inCurrency rdf:type owl:ObjectProperty ;
+                 rdfs:domain energ:CostPriceSeason ;
+                 rdfs:range energ:Currency ;
+                 rdfs:label "in currency" .
 
 
 ###  https://saref.etsi.org/core#hasProperty
@@ -128,6 +147,19 @@ energ:constructionYear rdf:type owl:DatatypeProperty ;
                        rdfs:label "construction Year" .
 
 
+###  https://auroral.iot.linkeddata.es/def/energy#contractTime
+energ:contractTime rdf:type owl:DatatypeProperty ;
+                   rdfs:domain energ:FixedAgreement ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Indicates the type of agreement (Year, month, week)" .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#costPrice
+energ:costPrice rdf:type owl:DatatypeProperty ;
+                rdfs:domain energ:CostPriceSeason ;
+                rdfs:range xsd:float .
+
+
 ###  https://auroral.iot.linkeddata.es/def/energy#heatingArea
 energ:heatingArea rdf:type owl:DatatypeProperty ;
                   rdfs:domain core:Building ;
@@ -162,15 +194,26 @@ core:Municipality rdf:type owl:Class ;
                   rdfs:label "Municipality" .
 
 
-###  https://auroral.iot.linkeddata.es/def/energy#Consoumer
-energ:Consoumer rdf:type owl:Class ;
-                rdfs:label "Consoumer" .
+###  https://auroral.iot.linkeddata.es/def/energy#Consumer
+energ:Consumer rdf:type owl:Class ;
+               rdfs:label "Consumer" .
 
 
-###  https://auroral.iot.linkeddata.es/def/energy#MonthlyAverageEnergyPrice
-energ:MonthlyAverageEnergyPrice rdf:type owl:Class ;
-                                rdfs:subClassOf energ:Price ;
-                                rdfs:label "Monthly Average Energy Price" .
+###  https://auroral.iot.linkeddata.es/def/energy#CostPriceSeason
+energ:CostPriceSeason rdf:type owl:Class ;
+                      rdfs:subClassOf energ:Price ;
+                      rdfs:label "Cost Price Season" .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#Currency
+energ:Currency rdf:type owl:Class ;
+               rdfs:label "Currency" .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#FixedAgreement
+energ:FixedAgreement rdf:type owl:Class ;
+                     rdfs:subClassOf energ:PriceAgreement ;
+                     rdfs:label "Fixed Agreement" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#Price
@@ -178,9 +221,31 @@ energ:Price rdf:type owl:Class ;
             rdfs:label "Price" .
 
 
+###  https://auroral.iot.linkeddata.es/def/energy#PriceAgreement
+energ:PriceAgreement rdf:type owl:Class ;
+                     rdfs:label "Price Agreement" .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#Season
+energ:Season rdf:type owl:Class ;
+             rdfs:label "Season" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/energy#SourceEnergy
 energ:SourceEnergy rdf:type owl:Class ;
                    rdfs:label "Source Energy" .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#StandardAgreement
+energ:StandardAgreement rdf:type owl:Class ;
+                        rdfs:subClassOf energ:PriceAgreement ;
+                        rdfs:label "Standard Agreement" .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#VariableAgreement
+energ:VariableAgreement rdf:type owl:Class ;
+                        rdfs:subClassOf energ:PriceAgreement ;
+                        rdfs:label "Variable Agreement" .
 
 
 ###  https://saref.etsi.org/core#FeatureofInterest
@@ -232,9 +297,24 @@ core:KilowattYear rdf:type owl:NamedIndividual ,
                            om:UnitOfMeasure .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#Summer
+core:Summer rdf:type owl:NamedIndividual ,
+                     energ:Season .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Winter
+core:Winter rdf:type owl:NamedIndividual ,
+                     energ:Season .
+
+
 ###  https://auroral.iot.linkeddata.es/def/energy#Apartement
-energ:Apartement rdf:type owl:NamedIndividual ,
-                          energ:Consoumer .
+energ:Apartement rdf:type owl:NamedIndividual ;
+                 rdfs:label "Apartement" .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#Autumn
+energ:Autumn rdf:type owl:NamedIndividual ,
+                      energ:Season .
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#ElectricityGrid
@@ -253,18 +333,18 @@ energ:FuelOil rdf:type owl:NamedIndividual ,
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#HouseWithElectricHeating
-energ:HouseWithElectricHeating rdf:type owl:NamedIndividual ,
-                                        energ:Consoumer .
+energ:HouseWithElectricHeating rdf:type owl:NamedIndividual ;
+                               rdfs:label "House with electric heating" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#HouseWithoutElectricHeating
-energ:HouseWithoutElectricHeating rdf:type owl:NamedIndividual ,
-                                           energ:Consoumer .
+energ:HouseWithoutElectricHeating rdf:type owl:NamedIndividual ;
+                                  rdfs:label "House without electric heating" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#LargerHouseholds
-energ:LargerHouseholds rdf:type owl:NamedIndividual ,
-                                energ:Consoumer .
+energ:LargerHouseholds rdf:type owl:NamedIndividual ;
+                       rdfs:label "Larger households" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#LigniteBriquette
@@ -278,26 +358,27 @@ energ:NatruralGas rdf:type owl:NamedIndividual ,
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#OneYearFixedAgreement
-energ:OneYearFixedAgreement rdf:type owl:NamedIndividual ,
-                                     energ:MonthlyAverageEnergyPrice ;
+energ:OneYearFixedAgreement rdf:type owl:NamedIndividual ;
                             rdfs:label "One year fixed agreement" .
 
 
+###  https://auroral.iot.linkeddata.es/def/energy#Springer
+energ:Springer rdf:type owl:NamedIndividual ,
+                        energ:Season .
+
+
 ###  https://auroral.iot.linkeddata.es/def/energy#StandardPriceAgreement
-energ:StandardPriceAgreement rdf:type owl:NamedIndividual ,
-                                      energ:MonthlyAverageEnergyPrice ;
+energ:StandardPriceAgreement rdf:type owl:NamedIndividual ;
                              rdfs:label "Standard price agreement" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#ThreeYearsFixedAgreement
-energ:ThreeYearsFixedAgreement rdf:type owl:NamedIndividual ,
-                                        energ:MonthlyAverageEnergyPrice ;
+energ:ThreeYearsFixedAgreement rdf:type owl:NamedIndividual ;
                                rdfs:label "Three year fixed agreement" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/energy#TwoYearsFixedAgreement
-energ:TwoYearsFixedAgreement rdf:type owl:NamedIndividual ,
-                                      energ:MonthlyAverageEnergyPrice ;
+energ:TwoYearsFixedAgreement rdf:type owl:NamedIndividual ;
                              rdfs:label "Two year fixed agreement" .
 
 
