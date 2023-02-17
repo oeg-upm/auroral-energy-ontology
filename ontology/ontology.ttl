@@ -267,6 +267,16 @@ saref:Property rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre
+<http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre> rdf:type owl:NamedIndividual ,
+                                                                                om:UnitOfMeasure .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram
+<http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram> rdf:type owl:NamedIndividual ,
+                                                                              om:UnitOfMeasure .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity
 adapters:EnergyUseIntensity rdf:type owl:NamedIndividual ,
                                      adapters:Energy .
@@ -277,24 +287,14 @@ adapters:TotalEnergy rdf:type owl:NamedIndividual ,
                               adapters:Energy .
 
 
-###  https://auroral.iot.linkeddata.es/def/core#CubicMeter
-core:CubicMeter rdf:type owl:NamedIndividual ,
-                         om:UnitOfMeasure .
+###  https://auroral.iot.linkeddata.es/def/core#KiloWattHourSquareMeter
+core:KiloWattHourSquareMeter rdf:type owl:NamedIndividual ,
+                                      om:UnitOfMeasure .
 
 
-###  https://auroral.iot.linkeddata.es/def/core#KiloWattSquareMeter
-core:KiloWattSquareMeter rdf:type owl:NamedIndividual ,
-                                  om:UnitOfMeasure .
-
-
-###  https://auroral.iot.linkeddata.es/def/core#Kilogram
-core:Kilogram rdf:type owl:NamedIndividual ,
-                       om:UnitOfMeasure .
-
-
-###  https://auroral.iot.linkeddata.es/def/core#KilowattYear
-core:KilowattYear rdf:type owl:NamedIndividual ,
-                           om:UnitOfMeasure .
+###  https://auroral.iot.linkeddata.es/def/core#KilowattHourYear
+core:KilowattHourYear rdf:type owl:NamedIndividual ,
+                               om:UnitOfMeasure .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Summer
