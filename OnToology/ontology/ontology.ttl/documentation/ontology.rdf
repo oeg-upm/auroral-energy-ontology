@@ -449,6 +449,24 @@
     
 
 
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity -->
 
 
@@ -467,37 +485,19 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/core#CubicMeter -->
+    <!-- https://auroral.iot.linkeddata.es/def/core#KiloWattHourSquareMeter -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#CubicMeter">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#KiloWattHourSquareMeter">
         <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/core#KiloWattSquareMeter -->
+    <!-- https://auroral.iot.linkeddata.es/def/core#KilowattHourYear -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#KiloWattSquareMeter">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#Kilogram -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#Kilogram">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#KilowattYear -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#KilowattYear">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#KilowattHourYear">
         <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure"/>
     </owl:NamedIndividual>
     

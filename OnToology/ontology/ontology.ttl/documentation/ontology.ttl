@@ -259,6 +259,16 @@
 #    Individuals
 #################################################################
 
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre
+<http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram
+<http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
+
+
 ###  https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity
 <https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity> rdf:type owl:NamedIndividual ,
                                                                              <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
@@ -269,24 +279,14 @@
                                                                       <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
 
 
-###  https://auroral.iot.linkeddata.es/def/core#CubicMeter
-<https://auroral.iot.linkeddata.es/def/core#CubicMeter> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
+###  https://auroral.iot.linkeddata.es/def/core#KiloWattHourSquareMeter
+<https://auroral.iot.linkeddata.es/def/core#KiloWattHourSquareMeter> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
 
 
-###  https://auroral.iot.linkeddata.es/def/core#KiloWattSquareMeter
-<https://auroral.iot.linkeddata.es/def/core#KiloWattSquareMeter> rdf:type owl:NamedIndividual ,
-                                                                          <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
-
-
-###  https://auroral.iot.linkeddata.es/def/core#Kilogram
-<https://auroral.iot.linkeddata.es/def/core#Kilogram> rdf:type owl:NamedIndividual ,
-                                                               <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
-
-
-###  https://auroral.iot.linkeddata.es/def/core#KilowattYear
-<https://auroral.iot.linkeddata.es/def/core#KilowattYear> rdf:type owl:NamedIndividual ,
-                                                                   <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
+###  https://auroral.iot.linkeddata.es/def/core#KilowattHourYear
+<https://auroral.iot.linkeddata.es/def/core#KilowattHourYear> rdf:type owl:NamedIndividual ,
+                                                                       <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Summer

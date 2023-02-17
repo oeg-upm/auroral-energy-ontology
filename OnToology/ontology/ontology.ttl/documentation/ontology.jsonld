@@ -5,6 +5,18 @@
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure"
+  } ]
+}, {
   "@id" : "http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -41,25 +53,13 @@
     "@id" : "https://saref.etsi.org/core#FeatureofInterest"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/core#CubicMeter",
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#KiloWattHourSquareMeter",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/core#KiloWattSquareMeter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure"
-  } ]
-}, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/core#Kilogram",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure"
-  } ]
-}, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/core#KilowattYear",
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#KilowattHourYear",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure"
