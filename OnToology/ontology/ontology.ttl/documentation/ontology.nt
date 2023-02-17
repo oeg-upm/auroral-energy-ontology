@@ -238,6 +238,14 @@
 # #################################################################
 # 
 # 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre
+<http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram
+<http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
+# 
 # https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity
 <https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
@@ -246,21 +254,13 @@
 <https://auroral.iot.linkeddata.es/def/adapters#TotalEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/adapters#TotalEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
 # 
-# https://auroral.iot.linkeddata.es/def/core#CubicMeter
-<https://auroral.iot.linkeddata.es/def/core#CubicMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/core#CubicMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
+# https://auroral.iot.linkeddata.es/def/core#KiloWattHourSquareMeter
+<https://auroral.iot.linkeddata.es/def/core#KiloWattHourSquareMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/core#KiloWattHourSquareMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
 # 
-# https://auroral.iot.linkeddata.es/def/core#KiloWattSquareMeter
-<https://auroral.iot.linkeddata.es/def/core#KiloWattSquareMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/core#KiloWattSquareMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
-# 
-# https://auroral.iot.linkeddata.es/def/core#Kilogram
-<https://auroral.iot.linkeddata.es/def/core#Kilogram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/core#Kilogram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
-# 
-# https://auroral.iot.linkeddata.es/def/core#KilowattYear
-<https://auroral.iot.linkeddata.es/def/core#KilowattYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/core#KilowattYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
+# https://auroral.iot.linkeddata.es/def/core#KilowattHourYear
+<https://auroral.iot.linkeddata.es/def/core#KilowattHourYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/core#KilowattHourYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure> .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Summer
 <https://auroral.iot.linkeddata.es/def/core#Summer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
