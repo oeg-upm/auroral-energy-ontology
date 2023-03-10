@@ -38,13 +38,6 @@ dc:description rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://auroral.iot.linkeddata.es/def/core#aboutProperty
-core:aboutProperty rdf:type owl:ObjectProperty ;
-                   rdfs:domain saref:Measurement ;
-                   rdfs:range saref:Property ;
-                   rdfs:label "about property" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/energy#belongsTo
 energ:belongsTo rdf:type owl:ObjectProperty ;
                 rdfs:domain core:Building ;
@@ -109,7 +102,7 @@ saref:hasProperty rdf:type owl:ObjectProperty ;
 ###  https://saref.etsi.org/core#isMeasuredIn
 saref:isMeasuredIn rdf:type owl:ObjectProperty ;
                    rdfs:domain saref:Measurement ;
-                   rdfs:range om:UnitOfMeasure ;
+                   rdfs:range saref:UnitOfMeasure ;
                    rdfs:label "is measured in" .
 
 
@@ -118,6 +111,20 @@ saref:isPropertyOf rdf:type owl:ObjectProperty ;
                    rdfs:domain saref:Property ;
                    rdfs:range saref:FeatureofInterest ;
                    rdfs:label "is property of" .
+
+
+###  https://saref.etsi.org/core#relatesToMeasurement
+saref:relatesToMeasurement rdf:type owl:ObjectProperty ;
+                           rdfs:domain saref:Property ;
+                           rdfs:range saref:Measurement ;
+                           rdfs:label "relates to measurement" .
+
+
+###  https://saref.etsi.org/core#relatesToProperty
+saref:relatesToProperty rdf:type owl:ObjectProperty ;
+                        rdfs:domain saref:Measurement ;
+                        rdfs:range saref:Property ;
+                        rdfs:label "relates to property" .
 
 
 #################################################################
@@ -170,11 +177,6 @@ energ:heatingArea rdf:type owl:DatatypeProperty ;
 #################################################################
 #    Classes
 #################################################################
-
-###  http://www.wurvoc.org/vocabularies/om-2/UnitOfMeasure
-om:UnitOfMeasure rdf:type owl:Class ;
-                 rdfs:label "Unit Of Measure" .
-
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Energy
 adapters:Energy rdf:type owl:Class ;
@@ -263,18 +265,23 @@ saref:Property rdf:type owl:Class ;
                rdfs:label "Property" .
 
 
+###  https://saref.etsi.org/core#UnitOfMeasure
+saref:UnitOfMeasure rdf:type owl:Class ;
+                    rdfs:label "Unit Of Measure" .
+
+
 #################################################################
 #    Individuals
 #################################################################
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre
 <http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre> rdf:type owl:NamedIndividual ,
-                                                                                om:UnitOfMeasure .
+                                                                                saref:UnitOfMeasure .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram
 <http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram> rdf:type owl:NamedIndividual ,
-                                                                              om:UnitOfMeasure .
+                                                                              saref:UnitOfMeasure .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity
@@ -289,12 +296,12 @@ adapters:TotalEnergy rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/core#KiloWattHourSquareMeter
 core:KiloWattHourSquareMeter rdf:type owl:NamedIndividual ,
-                                      om:UnitOfMeasure .
+                                      saref:UnitOfMeasure .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#KilowattHourYear
 core:KilowattHourYear rdf:type owl:NamedIndividual ,
-                               om:UnitOfMeasure .
+                               saref:UnitOfMeasure .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Summer
