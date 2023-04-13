@@ -87,7 +87,8 @@ energ:hasSource rdf:type owl:ObjectProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/energy#inCurrency
 energ:inCurrency rdf:type owl:ObjectProperty ;
-                 rdfs:domain energ:CostPriceSeason ;
+                 rdfs:domain energ:CostPriceSeason ,
+                             energ:PriceMeasurement ;
                  rdfs:range energ:Currency ;
                  rdfs:label "in currency" .
 
@@ -228,6 +229,12 @@ energ:PriceAgreement rdf:type owl:Class ;
                      rdfs:label "Price Agreement" .
 
 
+###  https://auroral.iot.linkeddata.es/def/energy#PriceMeasurement
+energ:PriceMeasurement rdf:type owl:Class ;
+                       rdfs:subClassOf saref:Measurement ;
+                       rdfs:label "Price Measurement" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/energy#Season
 energ:Season rdf:type owl:Class ;
              rdfs:label "Season" .
@@ -302,6 +309,11 @@ core:KiloWattHourSquareMeter rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/core#KilowattHourYear
 core:KilowattHourYear rdf:type owl:NamedIndividual ,
                                saref:UnitOfMeasure .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#MegawattHour
+core:MegawattHour rdf:type owl:NamedIndividual ,
+                           saref:UnitOfMeasure .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Summer
