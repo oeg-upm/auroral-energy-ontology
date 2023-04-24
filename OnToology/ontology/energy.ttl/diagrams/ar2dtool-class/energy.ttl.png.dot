@@ -1,0 +1,25 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "energ:CostPriceSeason" "energ:FixedAgreement" "energ:PriceAgreement" "saref:Property" "energ:SourceEnergy" "energ:Price" "core:Building" "core:Municipality" "energ:Season" "saref:UnitOfMeasure" "energ:Currency" "saref:FeatureofInterest" "saref:Measurement" "adapters:Energy" ; /*classes style*/
+	"energ:FixedAgreement" -> "xsd:string" [ label = "energ:contractTime" ];
+	"energ:CostPriceSeason" -> "energ:Season" [ label = "energ:forSeason" ];
+	"core:Building" -> "xsd:integer" [ label = "energ:constructionYear" ];
+	"core:Building" -> "core:Municipality" [ label = "energ:belongsTo" ];
+	"core:Building" -> "xsd:float" [ label = "energ:heatingArea" ];
+	"energ:Price" -> "owl:Thing" [ label = "energ:dependsOnConsumer" ];
+	"saref:Measurement" -> "saref:Property" [ label = "saref:relatesToProperty" ];
+	"saref:FeatureofInterest" -> "saref:Property" [ label = "saref:hasProperty" ];
+	"core:Building" -> "xsd:string" [ label = "core:name" ];
+	"adapters:Energy" -> "energ:Price" [ label = "energ:hasPrice" ];
+	"saref:Measurement" -> "saref:UnitOfMeasure" [ label = "saref:isMeasuredIn" ];
+	"energ:CostPriceSeason" -> "energ:Currency" [ label = "energ:inCurrency" ];
+	"energ:CostPriceSeason" -> "xsd:float" [ label = "energ:costPrice" ];
+	"energ:PriceAgreement" -> "energ:CostPriceSeason" [ label = "energ:hasCostPrice" ];
+	"owl:Thing" -> "core:Building" [ label = "energ:hasBuilding" ];
+	"saref:Property" -> "saref:Measurement" [ label = "saref:relatesToMeasurement" ];
+	"adapters:Energy" -> "energ:SourceEnergy" [ label = "energ:hasSource" ];
+	"saref:Property" -> "saref:FeatureofInterest" [ label = "saref:isPropertyOf" ];
+	"core:Building" -> "xsd:string" [ label = "core:id" ];
+
+}
