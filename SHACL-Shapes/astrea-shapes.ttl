@@ -1,0 +1,310 @@
+@prefix :      <https://auroral.iot.linkeddata.es/def/energy#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://astrea.linkeddata.es/shapes#dc3230fe26b5ba8a603c3de0935c5a51>
+        a               sh:NodeShape ;
+        rdfs:label      "Currency" ;
+        sh:name         "Currency" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Currency .
+
+<https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30>
+        a               sh:NodeShape ;
+        rdfs:label      "Energy" ;
+        sh:name         "Energy" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#9dffad6c33d9e4285d548d52b0640c03> , <https://astrea.linkeddata.es/shapes#4a0c985a547166028d944fd6b9acdfd5> ;
+        sh:targetClass  <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
+
+<https://astrea.linkeddata.es/shapes#3b0e33a7f35367d56a651132b67ae433>
+        a            sh:PropertyShape ;
+        rdfs:label   "depends on consumer" ;
+        sh:name      "depends on consumer" ;
+        sh:nodeKind  sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#ac2af05297c7f93b4a1cf34b22f56bad>
+        a            sh:PropertyShape ;
+        rdfs:label   "has building" ;
+        sh:class     <https://auroral.iot.linkeddata.es/def/core#Building> ;
+        sh:name      "has building" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasBuilding .
+
+<https://astrea.linkeddata.es/shapes#7b36b5632af5defdbd3bfdcf7927dac3>
+        a               sh:NodeShape ;
+        rdfs:label      "Season" ;
+        sh:name         "Season" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Season .
+
+<https://astrea.linkeddata.es/shapes#96e222f07eb766a94443e34f85ff2b53>
+        a            sh:PropertyShape ;
+        rdfs:label   "for season" ;
+        sh:class     :Season ;
+        sh:name      "for season" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :forSeason .
+
+<https://astrea.linkeddata.es/shapes#cdf42a56198fc59cbf7bb6266cc66817>
+        a               sh:NodeShape ;
+        rdfs:label      "Source Energy" ;
+        sh:name         "Source Energy" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :SourceEnergy .
+
+<https://astrea.linkeddata.es/shapes#647ebf070a3a16fa3eb85aefad5e0e7a>
+        a               sh:NodeShape ;
+        rdfs:label      "Consumer" ;
+        sh:name         "Consumer" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Consumer .
+
+<https://astrea.linkeddata.es/shapes#dc9ebcba3dbe2d620ce2050e27f89a03>
+        a            sh:PropertyShape ;
+        rdfs:label   "is property of" ;
+        sh:class     <https://saref.etsi.org/core#FeatureofInterest> ;
+        sh:name      "is property of" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <https://saref.etsi.org/core#isPropertyOf> .
+
+<https://astrea.linkeddata.es/shapes#f26d795ac0b8d6bd6c0f0135a4723196>
+        a               sh:NodeShape ;
+        rdfs:label      "Cost Price Season" ;
+        sh:name         "Cost Price Season" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#96e222f07eb766a94443e34f85ff2b53> , <https://astrea.linkeddata.es/shapes#ac81dbc8fc2b123370652f5cc49ff49e> , <https://astrea.linkeddata.es/shapes#c57f25f2697d1b0608cd1edd7a42c96f> ;
+        sh:targetClass  :CostPriceSeason .
+
+<https://astrea.linkeddata.es/shapes#a5fbef949b582a8877263102ff7748e8>
+        a               sh:NodeShape ;
+        rdfs:label      "Fixed Agreement" ;
+        sh:name         "Fixed Agreement" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#57f4a9afc6ff4ea1211c5248970f0c54> ;
+        sh:targetClass  :FixedAgreement .
+
+<https://astrea.linkeddata.es/shapes#ac81dbc8fc2b123370652f5cc49ff49e>
+        a            sh:PropertyShape ;
+        rdfs:label   "in currency" ;
+        sh:class     :Currency ;
+        sh:name      "in currency" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :inCurrency .
+
+<https://astrea.linkeddata.es/shapes#4a0c985a547166028d944fd6b9acdfd5>
+        a            sh:PropertyShape ;
+        rdfs:label   "has price" ;
+        sh:class     :Price ;
+        sh:name      "has price" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasPrice .
+
+<https://astrea.linkeddata.es/shapes#9dffad6c33d9e4285d548d52b0640c03>
+        a            sh:PropertyShape ;
+        rdfs:label   "has source" ;
+        sh:class     :SourceEnergy ;
+        sh:name      "has source" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasSource .
+
+<https://astrea.linkeddata.es/shapes#b4a36c72b5addbc875461e3b652b5e3c>
+        a            sh:PropertyShape ;
+        rdfs:label   "relates to property" ;
+        sh:class     <https://saref.etsi.org/core#Property> ;
+        sh:name      "relates to property" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <https://saref.etsi.org/core#relatesToProperty> .
+
+<https://astrea.linkeddata.es/shapes#08ff0dff9be39c2ff424d30d9117e8c7>
+        a               sh:NodeShape ;
+        rdfs:label      "Building" ;
+        sh:name         "Building" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#6f89015d8d6ebf959f70eaf3f0726c48> , <https://astrea.linkeddata.es/shapes#d4fe46d6d2486606017ab9391161e013> , <https://astrea.linkeddata.es/shapes#0a3772dac6bfb2034a3fd1aebcb0614d> , <https://astrea.linkeddata.es/shapes#fb28ef19873bafee7112a1b78172f073> , <https://astrea.linkeddata.es/shapes#40ac25e9b671e81cecc3650c27bd8a5a> ;
+        sh:targetClass  <https://auroral.iot.linkeddata.es/def/core#Building> .
+
+<https://astrea.linkeddata.es/report/0493401629>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#source>
+                "https://auroral.iot.linkeddata.es/def/energy/ontology.ttl" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#c57f25f2697d1b0608cd1edd7a42c96f>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:float ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :costPrice ;
+        sh:pattern   "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#49b5a0bf781ac644bf1ae11022104b1c>
+        a               sh:NodeShape ;
+        rdfs:label      "Measurement" ;
+        sh:name         "Measurement" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#7e5ca06f05f68f8b0d0e880d16e0e8e6> , <https://astrea.linkeddata.es/shapes#b4a36c72b5addbc875461e3b652b5e3c> ;
+        sh:targetClass  <https://saref.etsi.org/core#Measurement> .
+
+<https://astrea.linkeddata.es/shapes#96c8627ff64e07a0ba16ef3d0cec6e7a>
+        a               sh:NodeShape ;
+        rdfs:label      "Featureof Interest" ;
+        sh:name         "Featureof Interest" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#41434dbc5b0310a1738a6e770df8424b> , <https://astrea.linkeddata.es/shapes#6f89015d8d6ebf959f70eaf3f0726c48> , <https://astrea.linkeddata.es/shapes#0a3772dac6bfb2034a3fd1aebcb0614d> ;
+        sh:targetClass  <https://saref.etsi.org/core#FeatureofInterest> .
+
+<https://astrea.linkeddata.es/shapes#080333e408479c7534984c80b90ec390>
+        a            sh:PropertyShape ;
+        rdfs:label   "has cost price" ;
+        sh:class     :CostPriceSeason ;
+        sh:name      "has cost price" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasCostPrice .
+
+<https://astrea.linkeddata.es/shapes#e7c46da2f6c1689aa969aa80c25ff3e1>
+        a               sh:NodeShape ;
+        rdfs:label      "Unit Of Measure" ;
+        sh:name         "Unit Of Measure" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <https://saref.etsi.org/core#UnitOfMeasure> .
+
+<https://astrea.linkeddata.es/shapes#d4fe46d6d2486606017ab9391161e013>
+        a            sh:PropertyShape ;
+        rdfs:label   "heating Area" ;
+        sh:datatype  xsd:float ;
+        sh:name      "heating Area" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :heatingArea ;
+        sh:pattern   "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#6f89015d8d6ebf959f70eaf3f0726c48>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <https://auroral.iot.linkeddata.es/def/core#id> ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#debc1e66485881503ec696765ae90f62>
+        a               sh:NodeShape ;
+        rdfs:label      "Standard Agreement" ;
+        sh:name         "Standard Agreement" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :StandardAgreement .
+
+<https://astrea.linkeddata.es/shapes#a7f69e63f216b0b7b5966485350e68d8>
+        a               sh:NodeShape ;
+        rdfs:label      "Municipality" ;
+        sh:name         "Municipality" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#6f89015d8d6ebf959f70eaf3f0726c48> , <https://astrea.linkeddata.es/shapes#0a3772dac6bfb2034a3fd1aebcb0614d> ;
+        sh:targetClass  <https://auroral.iot.linkeddata.es/def/core#Municipality> .
+
+<https://astrea.linkeddata.es/shapes#77d20cafcd9ef8ed7c14d73678716954>
+        a               sh:NodeShape ;
+        rdfs:label      "Variable Agreement" ;
+        sh:name         "Variable Agreement" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :VariableAgreement .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#c57f25f2697d1b0608cd1edd7a42c96f> , <https://astrea.linkeddata.es/shapes#41434dbc5b0310a1738a6e770df8424b> , <https://astrea.linkeddata.es/shapes#080333e408479c7534984c80b90ec390> , <https://astrea.linkeddata.es/shapes#ac81dbc8fc2b123370652f5cc49ff49e> , <https://astrea.linkeddata.es/shapes#ac2af05297c7f93b4a1cf34b22f56bad> , <https://astrea.linkeddata.es/shapes#7e5ca06f05f68f8b0d0e880d16e0e8e6> , <https://astrea.linkeddata.es/shapes#0a3772dac6bfb2034a3fd1aebcb0614d> , <https://astrea.linkeddata.es/shapes#a5fbef949b582a8877263102ff7748e8> , <https://astrea.linkeddata.es/shapes#40ac25e9b671e81cecc3650c27bd8a5a> , <https://astrea.linkeddata.es/shapes#f94db90cdab7989526e9bbc809746a90> , <https://astrea.linkeddata.es/shapes#5c41b320bee9c5d5d8ed416a7e4219dc> , <https://astrea.linkeddata.es/shapes#131d035d3fbc9626966d4026c58cf536> , <https://astrea.linkeddata.es/shapes#a7f69e63f216b0b7b5966485350e68d8> , <https://astrea.linkeddata.es/shapes#9dffad6c33d9e4285d548d52b0640c03> , <https://astrea.linkeddata.es/shapes#96c8627ff64e07a0ba16ef3d0cec6e7a> , <https://astrea.linkeddata.es/shapes#6f89015d8d6ebf959f70eaf3f0726c48> , <https://astrea.linkeddata.es/shapes#96e222f07eb766a94443e34f85ff2b53> , <https://astrea.linkeddata.es/shapes#f26d795ac0b8d6bd6c0f0135a4723196> , <https://astrea.linkeddata.es/shapes#fb28ef19873bafee7112a1b78172f073> , <https://astrea.linkeddata.es/shapes#3b0e33a7f35367d56a651132b67ae433> , <https://astrea.linkeddata.es/shapes#dc9ebcba3dbe2d620ce2050e27f89a03> , <https://astrea.linkeddata.es/shapes#03c7461b27dbf2c54e232e6239374cfc> , <https://astrea.linkeddata.es/shapes#7b36b5632af5defdbd3bfdcf7927dac3> , <https://astrea.linkeddata.es/shapes#4a0c985a547166028d944fd6b9acdfd5> , <https://astrea.linkeddata.es/shapes#fc55fe8c5e46c96d7d698726a89d8598> , <https://astrea.linkeddata.es/shapes#dc3230fe26b5ba8a603c3de0935c5a51> , <https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30> , <https://astrea.linkeddata.es/shapes#57f4a9afc6ff4ea1211c5248970f0c54> , <https://astrea.linkeddata.es/shapes#d4fe46d6d2486606017ab9391161e013> , <https://astrea.linkeddata.es/shapes#49b5a0bf781ac644bf1ae11022104b1c> , <https://astrea.linkeddata.es/shapes#cdf42a56198fc59cbf7bb6266cc66817> , <https://astrea.linkeddata.es/shapes#b4a36c72b5addbc875461e3b652b5e3c> , <https://astrea.linkeddata.es/shapes#647ebf070a3a16fa3eb85aefad5e0e7a> , <https://astrea.linkeddata.es/shapes#08ff0dff9be39c2ff424d30d9117e8c7> , <https://astrea.linkeddata.es/shapes#77d20cafcd9ef8ed7c14d73678716954> , <https://astrea.linkeddata.es/shapes#e7c46da2f6c1689aa969aa80c25ff3e1> , <https://astrea.linkeddata.es/shapes#debc1e66485881503ec696765ae90f62> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0493401629> .
+
+<https://astrea.linkeddata.es/shapes#0a3772dac6bfb2034a3fd1aebcb0614d>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <https://auroral.iot.linkeddata.es/def/core#name> ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#41434dbc5b0310a1738a6e770df8424b>
+        a            sh:PropertyShape ;
+        rdfs:label   "has property" ;
+        sh:class     <https://saref.etsi.org/core#Property> ;
+        sh:name      "has property" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <https://saref.etsi.org/core#hasProperty> .
+
+<https://astrea.linkeddata.es/shapes#fb28ef19873bafee7112a1b78172f073>
+        a            sh:PropertyShape ;
+        rdfs:label   "construction Year" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "construction Year" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :constructionYear ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#57f4a9afc6ff4ea1211c5248970f0c54>
+        a               sh:PropertyShape ;
+        rdfs:label      "Indicates the type of agreement (Year, month, week)" ;
+        sh:datatype     xsd:string ;
+        sh:description  "Indicates the type of agreement (Year, month, week)" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :contractTime ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#fc55fe8c5e46c96d7d698726a89d8598>
+        a               sh:NodeShape ;
+        rdfs:label      "Property" ;
+        sh:name         "Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#f94db90cdab7989526e9bbc809746a90> , <https://astrea.linkeddata.es/shapes#dc9ebcba3dbe2d620ce2050e27f89a03> ;
+        sh:targetClass  <https://saref.etsi.org/core#Property> .
+
+<https://astrea.linkeddata.es/shapes#7e5ca06f05f68f8b0d0e880d16e0e8e6>
+        a            sh:PropertyShape ;
+        rdfs:label   "is measured in" ;
+        sh:class     <https://saref.etsi.org/core#UnitOfMeasure> ;
+        sh:name      "is measured in" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <https://saref.etsi.org/core#isMeasuredIn> .
+
+<https://astrea.linkeddata.es/shapes#f94db90cdab7989526e9bbc809746a90>
+        a            sh:PropertyShape ;
+        rdfs:label   "relates to measurement" ;
+        sh:class     <https://saref.etsi.org/core#Measurement> ;
+        sh:name      "relates to measurement" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <https://saref.etsi.org/core#relatesToMeasurement> .
+
+<https://astrea.linkeddata.es/shapes#03c7461b27dbf2c54e232e6239374cfc>
+        a               sh:NodeShape ;
+        rdfs:label      "Price" ;
+        sh:name         "Price" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Price .
+
+<https://astrea.linkeddata.es/shapes#131d035d3fbc9626966d4026c58cf536>
+        a               sh:NodeShape ;
+        rdfs:label      "Price Agreement" ;
+        sh:name         "Price Agreement" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#080333e408479c7534984c80b90ec390> ;
+        sh:targetClass  :PriceAgreement .
+
+<https://astrea.linkeddata.es/shapes#40ac25e9b671e81cecc3650c27bd8a5a>
+        a            sh:PropertyShape ;
+        rdfs:label   "belongs to" ;
+        sh:class     <https://auroral.iot.linkeddata.es/def/core#Municipality> ;
+        sh:name      "belongs to" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :belongsTo .
+
+<https://astrea.linkeddata.es/shapes#5c41b320bee9c5d5d8ed416a7e4219dc>
+        a               sh:NodeShape ;
+        rdfs:label      "Price Measurement" ;
+        sh:name         "Price Measurement" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#ac81dbc8fc2b123370652f5cc49ff49e> ;
+        sh:targetClass  :PriceMeasurement .
