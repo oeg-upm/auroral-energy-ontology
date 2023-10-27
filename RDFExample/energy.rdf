@@ -1,42 +1,38 @@
-@prefix ns1: < https://auroral.iot.linkeddata.es/def/energy# > .
-@prefix ns2: < https://auroral.iot.linkeddata.es/def/core# > .
-@prefix ns3: < https://auroral.iot.linkeddata.es/def/adapters# > .
-prefix  ns4: < https://saref.etsi.org/core# > .
-@prefix xsd: < http://www.w3.org/2001/XMLSchema# > .
-
+@prefix ns1: <https://auroral.iot.linkeddata.es/def/energy#> .
+@prefix ns2: <https://auroral.iot.linkeddata.es/def/core#> .
+@prefix ns3: <https://auroral.iot.linkeddata.es/def/adapters#> .
+@prefix  ns4: <https://saref.etsi.org/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 ns1:Building132261 a ns2:Building ; 
     ns2:belongsTo   ns1:Robertsfors ;
     ns4:hasProperty ns3:EnergyConsumption ;
     ns4:hasProperty ns3:EnergyUseIntensity ;
     ns2:heatingArea "153 m"^^xsd:string ;
-    ns2:constructionYear 1985 ;
-
-
-ns1:Robertsfors a ns2:Municipality ; 
-
+    ns2:constructionYear 1985 .
+ns1:Robertsfors a ns2:Municipality . 
 ns3:EnergyConsumption  ns1:hasSource ns1:FuelOil ; 
                        ns1:relatesToMeasurement ns1:Measurement132261 ;
-                       ns4:hasPrice ns1:CostPrice132261 ;
+                       ns4:hasPrice ns1:CostPrice132261 .
 
 ns3:EnergyUseIntensity ns1:hasSource ns1:NaturalGas ;
-                       ns1:relatedToMeasurement ns1:MeasurementuseIntensity132261 ; 
+                       ns1:relatedToMeasurement ns1:MeasurementuseIntensity132261 .
 
 ns1:Measurement132261 a ns4:Measurement ; 
                       ns4:hasValue 121217 ; 
-                      ns4:isMeasuredIn ns2:KilowattHourYear ;
+                      ns4:isMeasuredIn ns2:KilowattHourYear .
 
 ns1:MeasurementuseIntensity132261 a ns4:Measurement ;
                       ns4:hasValue 79.26143791 ; 
-                      ns4:isMeasuredIn ns2:KilowattHourYear ;
+                      ns4:isMeasuredIn ns2:KilowattHourYear .
 
-ns2:KiloWattHourYear a ns4:Unit-Of-Measure ;                   
+ns2:KiloWattHourYear a ns4:Unit-Of-Measure .                   
 
 ns1:CostPrice132261 a ns1:CostPriceSeason ; 
                     ns1:forSeason ns1:Spring ; 
                     ns1:costPrice 1.17 ; 
-                    ns1:hasAgreement ns1:FixedAgreement ; 
+                    ns1:hasAgreement ns1:FixedAgreement .
 
-ns1:Spring a ns1:Season ; 
+ns1:Spring a ns1:Season .
 
 ns1:FixedAgreement a ns1:PriceAgreement ; 
-                   ns1:contractType "One Year"^^xsd:string ; 
+                   ns1:contractType "One Year"^^xsd:string .
