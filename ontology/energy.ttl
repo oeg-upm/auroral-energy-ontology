@@ -20,7 +20,8 @@
                                                             "Juan Cano" ,
                                                             "María Poveda Villalón" ,
                                                             "Raúl García Castro" ;
-                                                 dc:description "Ontology code created by Chowlk" .
+                                                 dc:description "This ontology aims at modeling the building energy consumption for the AURORAL project." ;
+                                                 dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> .
 
 #################################################################
 #    Annotation properties
@@ -32,6 +33,10 @@ dc:creator rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/elements/1.1/description
 dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -60,6 +65,7 @@ energ:forSeason rdf:type owl:ObjectProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/energy#hasBuilding
 energ:hasBuilding rdf:type owl:ObjectProperty ;
+                  rdfs:domain energ:Consumer ;
                   rdfs:range core:Building ;
                   rdfs:label "has building" .
 
@@ -87,8 +93,6 @@ energ:hasSource rdf:type owl:ObjectProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/energy#inCurrency
 energ:inCurrency rdf:type owl:ObjectProperty ;
-                 rdfs:domain energ:CostPriceSeason ,
-                             energ:PriceMeasurement ;
                  rdfs:range energ:Currency ;
                  rdfs:label "in currency" .
 
@@ -134,17 +138,11 @@ saref:relatesToProperty rdf:type owl:ObjectProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#id
 core:id rdf:type owl:DatatypeProperty ;
-        rdfs:domain core:Building ,
-                    core:Municipality ,
-                    saref:FeatureofInterest ;
         rdfs:range xsd:string .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#name
 core:name rdf:type owl:DatatypeProperty ;
-          rdfs:domain core:Building ,
-                      core:Municipality ,
-                      saref:FeatureofInterest ;
           rdfs:range xsd:string .
 
 
