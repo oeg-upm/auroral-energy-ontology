@@ -1,0 +1,173 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/core#belongsTo
+<https://auroral.iot.linkeddata.es/def/core#belongsTo> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#constructionYear
+<https://auroral.iot.linkeddata.es/def/core#constructionYear> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#heatingArea
+<https://auroral.iot.linkeddata.es/def/core#heatingArea> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#contractType
+<https://auroral.iot.linkeddata.es/def/energy#contractType> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#costPrice
+<https://auroral.iot.linkeddata.es/def/energy#costPrice> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#forSeason
+<https://auroral.iot.linkeddata.es/def/energy#forSeason> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#hasAgreement
+<https://auroral.iot.linkeddata.es/def/energy#hasAgreement> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#hasSource
+<https://auroral.iot.linkeddata.es/def/energy#hasSource> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#relatedToMeasurement
+<https://auroral.iot.linkeddata.es/def/energy#relatedToMeasurement> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#relatesToMeasurement
+<https://auroral.iot.linkeddata.es/def/energy#relatesToMeasurement> rdf:type owl:AnnotationProperty .
+
+
+###  https://saref.etsi.org/core#hasPrice
+<https://saref.etsi.org/core#hasPrice> rdf:type owl:AnnotationProperty .
+
+
+###  https://saref.etsi.org/core#hasProperty
+<https://saref.etsi.org/core#hasProperty> rdf:type owl:AnnotationProperty .
+
+
+###  https://saref.etsi.org/core#hasValue
+<https://saref.etsi.org/core#hasValue> rdf:type owl:AnnotationProperty .
+
+
+###  https://saref.etsi.org/core#isMeasuredIn
+<https://saref.etsi.org/core#isMeasuredIn> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/core#Building
+<https://auroral.iot.linkeddata.es/def/core#Building> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Municipality
+<https://auroral.iot.linkeddata.es/def/core#Municipality> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#CostPriceSeason
+<https://auroral.iot.linkeddata.es/def/energy#CostPriceSeason> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#PriceAgreement
+<https://auroral.iot.linkeddata.es/def/energy#PriceAgreement> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#Season
+<https://auroral.iot.linkeddata.es/def/energy#Season> rdf:type owl:Class .
+
+
+###  https://saref.etsi.org/core#Measurement
+<https://saref.etsi.org/core#Measurement> rdf:type owl:Class .
+
+
+###  https://saref.etsi.org/core#Unit-Of-Measure
+<https://saref.etsi.org/core#Unit-Of-Measure> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/core#KiloWattHourYear
+<https://auroral.iot.linkeddata.es/def/core#KiloWattHourYear> rdf:type owl:NamedIndividual ,
+                                                                       <https://saref.etsi.org/core#Unit-Of-Measure> .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#Building132261
+<https://auroral.iot.linkeddata.es/def/energy#Building132261> rdf:type owl:NamedIndividual ,
+                                                                       <https://auroral.iot.linkeddata.es/def/core#Building> ;
+                                                              <https://auroral.iot.linkeddata.es/def/core#belongsTo> <https://auroral.iot.linkeddata.es/def/energy#Robertsfors> ;
+                                                              <https://auroral.iot.linkeddata.es/def/core#constructionYear> 1985 ;
+                                                              <https://auroral.iot.linkeddata.es/def/core#heatingArea> "153 m" ;
+                                                              <https://saref.etsi.org/core#hasProperty> <https://auroral.iot.linkeddata.es/def/adapters#EnergyConsumption> ,
+                                                                                                        <https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity> .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#CostPrice132261
+<https://auroral.iot.linkeddata.es/def/energy#CostPrice132261> rdf:type owl:NamedIndividual ,
+                                                                        <https://auroral.iot.linkeddata.es/def/energy#CostPriceSeason> ;
+                                                               <https://auroral.iot.linkeddata.es/def/energy#costPrice> 1.17 ;
+                                                               <https://auroral.iot.linkeddata.es/def/energy#forSeason> <https://auroral.iot.linkeddata.es/def/energy#Spring> ;
+                                                               <https://auroral.iot.linkeddata.es/def/energy#hasAgreement> <https://auroral.iot.linkeddata.es/def/energy#FixedAgreement> .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#FixedAgreement
+<https://auroral.iot.linkeddata.es/def/energy#FixedAgreement> rdf:type owl:NamedIndividual ,
+                                                                       <https://auroral.iot.linkeddata.es/def/energy#PriceAgreement> ;
+                                                              <https://auroral.iot.linkeddata.es/def/energy#contractType> "One Year" .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#Measurement132261
+<https://auroral.iot.linkeddata.es/def/energy#Measurement132261> rdf:type owl:NamedIndividual ,
+                                                                          <https://saref.etsi.org/core#Measurement> ;
+                                                                 <https://saref.etsi.org/core#hasValue> 121217 ;
+                                                                 <https://saref.etsi.org/core#isMeasuredIn> <https://auroral.iot.linkeddata.es/def/core#KilowattHourYear> .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#MeasurementuseIntensity132261
+<https://auroral.iot.linkeddata.es/def/energy#MeasurementuseIntensity132261> rdf:type owl:NamedIndividual ,
+                                                                                      <https://saref.etsi.org/core#Measurement> ;
+                                                                             <https://saref.etsi.org/core#hasValue> 79.26143791 ;
+                                                                             <https://saref.etsi.org/core#isMeasuredIn> <https://auroral.iot.linkeddata.es/def/core#KilowattHourYear> .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#Robertsfors
+<https://auroral.iot.linkeddata.es/def/energy#Robertsfors> rdf:type owl:NamedIndividual ,
+                                                                    <https://auroral.iot.linkeddata.es/def/core#Municipality> .
+
+
+###  https://auroral.iot.linkeddata.es/def/energy#Spring
+<https://auroral.iot.linkeddata.es/def/energy#Spring> rdf:type owl:NamedIndividual ,
+                                                               <https://auroral.iot.linkeddata.es/def/energy#Season> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://auroral.iot.linkeddata.es/def/adapters#EnergyConsumption> <https://auroral.iot.linkeddata.es/def/energy#hasSource> <https://auroral.iot.linkeddata.es/def/energy#FuelOil> ;
+                                                                   <https://auroral.iot.linkeddata.es/def/energy#relatesToMeasurement> <https://auroral.iot.linkeddata.es/def/energy#Measurement132261> ;
+                                                                   <https://saref.etsi.org/core#hasPrice> <https://auroral.iot.linkeddata.es/def/energy#CostPrice132261> .
+
+
+<https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity> <https://auroral.iot.linkeddata.es/def/energy#hasSource> <https://auroral.iot.linkeddata.es/def/energy#NaturalGas> ;
+                                                                    <https://auroral.iot.linkeddata.es/def/energy#relatedToMeasurement> <https://auroral.iot.linkeddata.es/def/energy#MeasurementuseIntensity132261> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

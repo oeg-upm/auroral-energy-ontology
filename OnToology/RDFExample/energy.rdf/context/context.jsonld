@@ -1,0 +1,67 @@
+{
+  "@context" : {
+    "belongsTo" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#belongsTo"
+    },
+    "hasPrice" : {
+      "@id" : "https://saref.etsi.org/core#hasPrice"
+    },
+    "costPrice" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/energy#costPrice"
+    },
+    "forSeason" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/energy#forSeason"
+    },
+    "hasValue" : {
+      "@id" : "https://saref.etsi.org/core#hasValue"
+    },
+    "hasAgreement" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/energy#hasAgreement"
+    },
+    "constructionYear" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#constructionYear"
+    },
+    "Measurement" : {
+      "@id" : "https://saref.etsi.org/core#Measurement"
+    },
+    "hasProperty" : {
+      "@id" : "https://saref.etsi.org/core#hasProperty"
+    },
+    "Unit-Of-Measure" : {
+      "@id" : "https://saref.etsi.org/core#Unit-Of-Measure"
+    },
+    "CostPriceSeason" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/energy#CostPriceSeason"
+    },
+    "hasSource" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/energy#hasSource"
+    },
+    "Building" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Building"
+    },
+    "PriceAgreement" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/energy#PriceAgreement"
+    },
+    "relatesToMeasurement" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/energy#relatesToMeasurement"
+    },
+    "isMeasuredIn" : {
+      "@id" : "https://saref.etsi.org/core#isMeasuredIn"
+    },
+    "Municipality" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Municipality"
+    },
+    "relatedToMeasurement" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/energy#relatedToMeasurement"
+    },
+    "Season" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/energy#Season"
+    },
+    "heatingArea" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#heatingArea"
+    },
+    "contractType" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/energy#contractType"
+    }
+  }
+}

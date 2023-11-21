@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"ns3:EnergyUseIntensity" -> "ns1:MeasurementuseIntensity132261" [ label = "ns1:relatedToMeasurement" ];
+	"ns3:EnergyUseIntensity" -> "ns1:NaturalGas" [ label = "ns1:hasSource" ];
+	"ns1:CostPrice132261" -> "ns1:FixedAgreement" [ label = "ns1:hasAgreement" ];
+	"ns1:CostPrice132261" -> "ns1:Spring" [ label = "ns1:forSeason" ];
+	"ns3:EnergyConsumption" -> "ns1:CostPrice132261" [ label = "ns4:hasPrice" ];
+	"ns3:EnergyConsumption" -> "ns1:Measurement132261" [ label = "ns1:relatesToMeasurement" ];
+	"ns3:EnergyConsumption" -> "ns1:FuelOil" [ label = "ns1:hasSource" ];
+	"ns1:Building132261" -> "ns3:EnergyUseIntensity" [ label = "ns4:hasProperty" ];
+	"ns1:Building132261" -> "ns3:EnergyConsumption" [ label = "ns4:hasProperty" ];
+	"ns1:Building132261" -> "ns1:Robertsfors" [ label = "ns2:belongsTo" ];
+	"ns1:MeasurementuseIntensity132261" -> "ns2:KilowattHourYear" [ label = "ns4:isMeasuredIn" ];
+	"ns1:Measurement132261" -> "ns2:KilowattHourYear" [ label = "ns4:isMeasuredIn" ];
+
+}
