@@ -1,0 +1,176 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#EnergyConsumption",
+  "https://auroral.iot.linkeddata.es/def/energy#hasSource" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#FuelOil"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/energy#relatesToMeasurement" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#Measurement132261"
+  } ],
+  "https://saref.etsi.org/core#hasPrice" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#CostPrice132261"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity",
+  "https://auroral.iot.linkeddata.es/def/energy#hasSource" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#NaturalGas"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/energy#relatedToMeasurement" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#MeasurementuseIntensity132261"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#Building",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#KiloWattHourYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core#Unit-Of-Measure"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#Municipality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#belongsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#constructionYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#heatingArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#Building132261",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Building"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#Robertsfors"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#constructionYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1985"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#heatingArea" : [ {
+    "@value" : "153 m"
+  } ],
+  "https://saref.etsi.org/core#hasProperty" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#EnergyConsumption"
+  }, {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#EnergyUseIntensity"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#CostPrice132261",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#CostPriceSeason"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/energy#costPrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.17"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/energy#forSeason" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#Spring"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/energy#hasAgreement" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#FixedAgreement"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#CostPriceSeason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#FixedAgreement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#PriceAgreement"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/energy#contractType" : [ {
+    "@value" : "One Year"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#Measurement132261",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core#Measurement"
+  } ],
+  "https://saref.etsi.org/core#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "121217"
+  } ],
+  "https://saref.etsi.org/core#isMeasuredIn" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#KilowattHourYear"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#MeasurementuseIntensity132261",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core#Measurement"
+  } ],
+  "https://saref.etsi.org/core#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "79.26143791"
+  } ],
+  "https://saref.etsi.org/core#isMeasuredIn" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#KilowattHourYear"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#PriceAgreement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#Robertsfors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Municipality"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#Season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#Spring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#Season"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#contractType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#costPrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#forSeason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#hasAgreement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#hasSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#relatedToMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/energy#relatesToMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#Measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#Unit-Of-Measure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#hasPrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#hasProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#isMeasuredIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

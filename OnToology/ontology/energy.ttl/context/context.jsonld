@@ -11,6 +11,9 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/energy#hasPrice",
       "@type" : "@id"
     },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
     "costPrice" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/energy#costPrice",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"

@@ -1,0 +1,929 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://astrea.linkeddata.es/report",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/astrea#ShapeReport"
+  } ],
+  "https://w3id.org/def/astrea#contains" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#a5fbef949b582a8877263102ff7748e8"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#a7f69e63f216b0b7b5966485350e68d8"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#ac2af05297c7f93b4a1cf34b22f56bad"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#ac81dbc8fc2b123370652f5cc49ff49e"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#b4a36c72b5addbc875461e3b652b5e3c"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#c57f25f2697d1b0608cd1edd7a42c96f"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#cdf42a56198fc59cbf7bb6266cc66817"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#d4fe46d6d2486606017ab9391161e013"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#dc3230fe26b5ba8a603c3de0935c5a51"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#dc9ebcba3dbe2d620ce2050e27f89a03"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#debc1e66485881503ec696765ae90f62"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#e7c46da2f6c1689aa969aa80c25ff3e1"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#f26d795ac0b8d6bd6c0f0135a4723196"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#f94db90cdab7989526e9bbc809746a90"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#fb28ef19873bafee7112a1b78172f073"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#fc55fe8c5e46c96d7d698726a89d8598"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#0a3772dac6bfb2034a3fd1aebcb0614d"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#03c7461b27dbf2c54e232e6239374cfc"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#08ff0dff9be39c2ff424d30d9117e8c7"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#080333e408479c7534984c80b90ec390"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#131d035d3fbc9626966d4026c58cf536"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#3b0e33a7f35367d56a651132b67ae433"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#4a0c985a547166028d944fd6b9acdfd5"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#40ac25e9b671e81cecc3650c27bd8a5a"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#41434dbc5b0310a1738a6e770df8424b"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#49b5a0bf781ac644bf1ae11022104b1c"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#5c41b320bee9c5d5d8ed416a7e4219dc"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#57f4a9afc6ff4ea1211c5248970f0c54"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#6f89015d8d6ebf959f70eaf3f0726c48"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#647ebf070a3a16fa3eb85aefad5e0e7a"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#7b36b5632af5defdbd3bfdcf7927dac3"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#7e5ca06f05f68f8b0d0e880d16e0e8e6"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#77d20cafcd9ef8ed7c14d73678716954"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#9dffad6c33d9e4285d548d52b0640c03"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#96c8627ff64e07a0ba16ef3d0cec6e7a"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#96e222f07eb766a94443e34f85ff2b53"
+  } ],
+  "https://w3id.org/def/astrea#generatedShapesFrom" : [ {
+    "@id" : "https://astrea.linkeddata.es/report/0493401629"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#NodeShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#PropertyShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#class",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#datatype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#nodeKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#path",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#pattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#targetClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/report/0493401629",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/astrea#ReportEntry"
+  } ],
+  "https://w3id.org/def/astrea#message" : [ {
+    "@value" : "Shapes generated with no errors"
+  } ],
+  "https://w3id.org/def/astrea#source" : [ {
+    "@value" : "https://auroral.iot.linkeddata.es/def/energy/ontology.ttl"
+  } ],
+  "https://w3id.org/def/astrea#statusCode" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "200"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#03c7461b27dbf2c54e232e6239374cfc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Price"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Price"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#Price"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#080333e408479c7534984c80b90ec390",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has cost price"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#CostPriceSeason"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has cost price"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#hasCostPrice"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#08ff0dff9be39c2ff424d30d9117e8c7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Building"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Building"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#d4fe46d6d2486606017ab9391161e013"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#fb28ef19873bafee7112a1b78172f073"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#0a3772dac6bfb2034a3fd1aebcb0614d"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#40ac25e9b671e81cecc3650c27bd8a5a"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#6f89015d8d6ebf959f70eaf3f0726c48"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Building"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#0a3772dac6bfb2034a3fd1aebcb0614d",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#name"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#131d035d3fbc9626966d4026c58cf536",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Price Agreement"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Price Agreement"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#080333e408479c7534984c80b90ec390"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#PriceAgreement"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Energy"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Energy"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#4a0c985a547166028d944fd6b9acdfd5"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#9dffad6c33d9e4285d548d52b0640c03"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#3b0e33a7f35367d56a651132b67ae433",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "depends on consumer"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "depends on consumer"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#40ac25e9b671e81cecc3650c27bd8a5a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "belongs to"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Municipality"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "belongs to"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#belongsTo"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#41434dbc5b0310a1738a6e770df8424b",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has property"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://saref.etsi.org/core#Property"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has property"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://saref.etsi.org/core#hasProperty"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#49b5a0bf781ac644bf1ae11022104b1c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Measurement"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Measurement"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#b4a36c72b5addbc875461e3b652b5e3c"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#7e5ca06f05f68f8b0d0e880d16e0e8e6"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://saref.etsi.org/core#Measurement"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#4a0c985a547166028d944fd6b9acdfd5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has price"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#Price"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has price"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#hasPrice"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#57f4a9afc6ff4ea1211c5248970f0c54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Indicates the type of agreement (Year, month, week)"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "Indicates the type of agreement (Year, month, week)"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#contractTime"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#5c41b320bee9c5d5d8ed416a7e4219dc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Price Measurement"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Price Measurement"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#ac81dbc8fc2b123370652f5cc49ff49e"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#PriceMeasurement"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#647ebf070a3a16fa3eb85aefad5e0e7a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Consumer"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Consumer"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#Consumer"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#6f89015d8d6ebf959f70eaf3f0726c48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#id"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#77d20cafcd9ef8ed7c14d73678716954",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Variable Agreement"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Variable Agreement"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#VariableAgreement"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#7b36b5632af5defdbd3bfdcf7927dac3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Season"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Season"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#Season"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#7e5ca06f05f68f8b0d0e880d16e0e8e6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is measured in"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://saref.etsi.org/core#UnitOfMeasure"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "is measured in"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://saref.etsi.org/core#isMeasuredIn"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#96c8627ff64e07a0ba16ef3d0cec6e7a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Featureof Interest"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Featureof Interest"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#0a3772dac6bfb2034a3fd1aebcb0614d"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#41434dbc5b0310a1738a6e770df8424b"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#6f89015d8d6ebf959f70eaf3f0726c48"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://saref.etsi.org/core#FeatureofInterest"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#96e222f07eb766a94443e34f85ff2b53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "for season"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#Season"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "for season"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#forSeason"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#9dffad6c33d9e4285d548d52b0640c03",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has source"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#SourceEnergy"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has source"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#hasSource"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#a5fbef949b582a8877263102ff7748e8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fixed Agreement"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Fixed Agreement"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#57f4a9afc6ff4ea1211c5248970f0c54"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#FixedAgreement"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#a7f69e63f216b0b7b5966485350e68d8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Municipality"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Municipality"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#0a3772dac6bfb2034a3fd1aebcb0614d"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#6f89015d8d6ebf959f70eaf3f0726c48"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Municipality"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#ac2af05297c7f93b4a1cf34b22f56bad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has building"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Building"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has building"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#hasBuilding"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#ac81dbc8fc2b123370652f5cc49ff49e",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "in currency"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#Currency"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "in currency"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#inCurrency"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#b4a36c72b5addbc875461e3b652b5e3c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "relates to property"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://saref.etsi.org/core#Property"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "relates to property"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://saref.etsi.org/core#relatesToProperty"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#c57f25f2697d1b0608cd1edd7a42c96f",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#costPrice"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#cdf42a56198fc59cbf7bb6266cc66817",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Source Energy"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Source Energy"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#SourceEnergy"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#d4fe46d6d2486606017ab9391161e013",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "heating Area"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "heating Area"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#heatingArea"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#dc3230fe26b5ba8a603c3de0935c5a51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Currency"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Currency"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#Currency"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#dc9ebcba3dbe2d620ce2050e27f89a03",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is property of"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://saref.etsi.org/core#FeatureofInterest"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "is property of"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://saref.etsi.org/core#isPropertyOf"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#debc1e66485881503ec696765ae90f62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Standard Agreement"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Standard Agreement"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#StandardAgreement"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#e7c46da2f6c1689aa969aa80c25ff3e1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Unit Of Measure"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Unit Of Measure"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://saref.etsi.org/core#UnitOfMeasure"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#f26d795ac0b8d6bd6c0f0135a4723196",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cost Price Season"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Cost Price Season"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#ac81dbc8fc2b123370652f5cc49ff49e"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#c57f25f2697d1b0608cd1edd7a42c96f"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#96e222f07eb766a94443e34f85ff2b53"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#CostPriceSeason"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#f94db90cdab7989526e9bbc809746a90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "relates to measurement"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://saref.etsi.org/core#Measurement"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "relates to measurement"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://saref.etsi.org/core#relatesToMeasurement"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#fb28ef19873bafee7112a1b78172f073",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "construction Year"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "construction Year"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#constructionYear"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : "[\\-+]?[0-9]+"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#fc55fe8c5e46c96d7d698726a89d8598",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Property"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Property"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#dc9ebcba3dbe2d620ce2050e27f89a03"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#f94db90cdab7989526e9bbc809746a90"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://saref.etsi.org/core#Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#ReportEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#ShapeReport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#contains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#generatedShapesFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#message",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#statusCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

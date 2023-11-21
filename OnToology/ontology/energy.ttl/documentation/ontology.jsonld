@@ -5,6 +5,9 @@
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -88,26 +91,12 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#id",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#Building"
-  }, {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#Municipality"
-  }, {
-    "@id" : "https://saref.etsi.org/core#FeatureofInterest"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#Building"
-  }, {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#Municipality"
-  }, {
-    "@id" : "https://saref.etsi.org/core#FeatureofInterest"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
@@ -126,7 +115,10 @@
     "@value" : "Raúl García Castro"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Ontology code created by Chowlk"
+    "@value" : "This ontology aims at modeling the building energy consumption for the AURORAL project."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/energy#Apartement",
@@ -368,6 +360,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/energy#hasBuilding",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/energy#Consumer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has building"
   } ],
@@ -425,11 +420,6 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/energy#inCurrency",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/energy#CostPriceSeason"
-  }, {
-    "@id" : "https://auroral.iot.linkeddata.es/def/energy#PriceMeasurement"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "in currency"
   } ],

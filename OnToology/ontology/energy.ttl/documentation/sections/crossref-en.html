@@ -1,6 +1,8 @@
 <h2 id="crossreference" class="list">Cross-reference for [Ontology Name] classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by [Ontology Name].
-<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+<div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
@@ -93,8 +95,6 @@ This section provides details for each class and property defined by [Ontology N
                title="https://auroral.iot.linkeddata.es/def/energy#constructionYear">construction Year</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#heatingArea"
                title="https://auroral.iot.linkeddata.es/def/energy#heatingArea">heating Area</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#id" title="https://auroral.iot.linkeddata.es/def/core#id">id</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#name" title="https://auroral.iot.linkeddata.es/def/core#name">name</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -112,6 +112,14 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/energy#Consumer</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasBuilding"
+               title="https://auroral.iot.linkeddata.es/def/energy#hasBuilding">has building</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="CostPriceSeason">
       <h3>Cost Price Season<sup class="type-c" title="class">c</sup>
@@ -133,8 +141,6 @@ This section provides details for each class and property defined by [Ontology N
                title="https://auroral.iot.linkeddata.es/def/energy#costPrice">cost price</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#forSeason"
                title="https://auroral.iot.linkeddata.es/def/energy#forSeason">for season</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#inCurrency"
-               title="https://auroral.iot.linkeddata.es/def/energy#inCurrency">in currency</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -211,9 +217,7 @@ This section provides details for each class and property defined by [Ontology N
          <dt>is in domain of</dt>
          <dd>
             <a href="#https://saref.etsi.org/core#hasProperty" title="https://saref.etsi.org/core#hasProperty">has property</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#id" title="https://auroral.iot.linkeddata.es/def/core#id">id</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#name" title="https://auroral.iot.linkeddata.es/def/core#name">name</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -283,12 +287,6 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#https://saref.etsi.org/core#FeatureofInterest" title="https://saref.etsi.org/core#FeatureofInterest">Featureof Interest</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#https://auroral.iot.linkeddata.es/def/core#id" title="https://auroral.iot.linkeddata.es/def/core#id">id</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#name" title="https://auroral.iot.linkeddata.es/def/core#name">name</a>
-            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -364,12 +362,6 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#https://saref.etsi.org/core#Measurement" title="https://saref.etsi.org/core#Measurement">Measurement</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#inCurrency"
-               title="https://auroral.iot.linkeddata.es/def/energy#inCurrency">in currency</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -520,7 +512,9 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
@@ -646,6 +640,12 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/energy#hasBuilding</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Consumer"
+                  title="https://auroral.iot.linkeddata.es/def/energy#Consumer">Consumer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#https://auroral.iot.linkeddata.es/def/core#Building"
@@ -758,17 +758,6 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/energy#inCurrency</p>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#CostPriceSeason"
-                  title="https://auroral.iot.linkeddata.es/def/energy#CostPriceSeason">Cost Price Season</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#PriceMeasurement"
-                  title="https://auroral.iot.linkeddata.es/def/energy#PriceMeasurement">Price Measurement</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Currency"
@@ -866,7 +855,9 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
@@ -1008,21 +999,6 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#id</p>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#https://auroral.iot.linkeddata.es/def/core#Building"
-                  title="https://auroral.iot.linkeddata.es/def/core#Building">Building</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#https://auroral.iot.linkeddata.es/def/core#Municipality"
-                  title="https://auroral.iot.linkeddata.es/def/core#Municipality">Municipality</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#https://saref.etsi.org/core#FeatureofInterest" title="https://saref.etsi.org/core#FeatureofInterest">Featureof Interest</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
@@ -1041,21 +1017,6 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#name</p>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#https://auroral.iot.linkeddata.es/def/core#Building"
-                  title="https://auroral.iot.linkeddata.es/def/core#Building">Building</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#https://auroral.iot.linkeddata.es/def/core#Municipality"
-                  title="https://auroral.iot.linkeddata.es/def/core#Municipality">Municipality</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#https://saref.etsi.org/core#FeatureofInterest" title="https://saref.etsi.org/core#FeatureofInterest">Featureof Interest</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
@@ -1065,7 +1026,9 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>

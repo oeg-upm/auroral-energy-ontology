@@ -4,7 +4,8 @@
 <https://auroral.iot.linkeddata.es/def/energy#> <http://purl.org/dc/elements/1.1/creator> "Juan Cano" .
 <https://auroral.iot.linkeddata.es/def/energy#> <http://purl.org/dc/elements/1.1/creator> "María Poveda Villalón" .
 <https://auroral.iot.linkeddata.es/def/energy#> <http://purl.org/dc/elements/1.1/creator> "Raúl García Castro" .
-<https://auroral.iot.linkeddata.es/def/energy#> <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" .
+<https://auroral.iot.linkeddata.es/def/energy#> <http://purl.org/dc/elements/1.1/description> "This ontology aims at modeling the building energy consumption for the AURORAL project." .
+<https://auroral.iot.linkeddata.es/def/energy#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
 # 
 # 
 # #################################################################
@@ -19,6 +20,9 @@
 # 
 # http://purl.org/dc/elements/1.1/description
 <http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -48,6 +52,7 @@
 # 
 # https://auroral.iot.linkeddata.es/def/energy#hasBuilding
 <https://auroral.iot.linkeddata.es/def/energy#hasBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/energy#hasBuilding> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/energy#Consumer> .
 <https://auroral.iot.linkeddata.es/def/energy#hasBuilding> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Building> .
 <https://auroral.iot.linkeddata.es/def/energy#hasBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "has building" .
 # 
@@ -71,8 +76,6 @@
 # 
 # https://auroral.iot.linkeddata.es/def/energy#inCurrency
 <https://auroral.iot.linkeddata.es/def/energy#inCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://auroral.iot.linkeddata.es/def/energy#inCurrency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/energy#CostPriceSeason> .
-<https://auroral.iot.linkeddata.es/def/energy#inCurrency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/energy#PriceMeasurement> .
 <https://auroral.iot.linkeddata.es/def/energy#inCurrency> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/energy#Currency> .
 <https://auroral.iot.linkeddata.es/def/energy#inCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "in currency" .
 # 
@@ -117,16 +120,10 @@
 # 
 # https://auroral.iot.linkeddata.es/def/core#id
 <https://auroral.iot.linkeddata.es/def/core#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://auroral.iot.linkeddata.es/def/core#id> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Building> .
-<https://auroral.iot.linkeddata.es/def/core#id> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Municipality> .
-<https://auroral.iot.linkeddata.es/def/core#id> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#FeatureofInterest> .
 <https://auroral.iot.linkeddata.es/def/core#id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # https://auroral.iot.linkeddata.es/def/core#name
 <https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Building> .
-<https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Municipality> .
-<https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#FeatureofInterest> .
 <https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # https://auroral.iot.linkeddata.es/def/energy#constructionYear
