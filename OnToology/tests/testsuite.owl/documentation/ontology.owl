@@ -1,0 +1,530 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://auroral.iot.linkeddata.es/def/tests/energy#"
+     xml:base="https://auroral.iot.linkeddata.es/def/tests/energy"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vtc="https://w3id.org/def/vtc#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://auroral.iot.linkeddata.es/def/tests/energy#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/vtc#belongsTo -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vtc#belongsTo"/>
+    
+
+
+    <!-- https://w3id.org/def/vtc#desiredBehaviour -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vtc#desiredBehaviour"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/vtc#TestCaseDesign -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vtc#TestCaseDesign"/>
+    
+
+
+    <!-- https://w3id.org/def/vtc#TestSuite -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vtc#TestSuite"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test1">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>FeatureOfInterest hasProperty Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test10 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test10">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>LigniteBriquette type SourceEnergy</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test11 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test11">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>ElectricityGrid type SourceEnergy</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test12 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test12">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Consumer hasBuilding Building</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test13 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test13">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Building subClassOf FeatureOfInterest</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test14 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test14">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Municipality subClassOf FeatureOfInterest</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test15 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test15">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Building belongsTo Municipality</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test16 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test16">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>EnergyProperty hasPrice Price</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test17 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test17">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Price hasAgreement PriceAgreement</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test18 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test18">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>PriceAgreement hasCostPrice CostPriceSeason</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test19 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test19">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>FixedAgreement subClassOf PriceAgreement</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test2">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Property isPropertyOf FeatureOfInterest</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test20 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test20">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>VariableAgreement subClassOf PriceAgreement</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test21 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test21">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>StandardAgreement subClassOf PriceAgreement</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test22 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test22">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>CostPriceSeason forSeason Season</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test23 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test23">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Winter type Season</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test24 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test24">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Spring type Season</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test25 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test25">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Summer type Season</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test26 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test26">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Autumn type Season</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test27 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test27">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>OneYearFixedAgreement type FixedAgreement</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test28 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test28">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>TwoYearsFixedAgreement type FixedAgreement</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test29 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test29">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>ThreeYearsFixedAgreement type FixedAgreement</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test3">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>EnergyProperty subClassOf Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test30 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test30">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Apartment type Consumer</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test31 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test31">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>HouseWithoutElectricHeating type Consumer</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test32 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test32">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>HouseWithElectricHeating type Consumer</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test33 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test33">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>LargerHouseholds type Consumer</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test34 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test34">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>CostPriceSeason inCurrency Currency</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test35 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test35">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>PriceMeasurement subClassOf Measurement</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test36 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test36">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Measurement hasTemporalEntity TemporalEntity</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test37 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test37">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Measurement isMeasuredIn UnitOfMeasure</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test38 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test38">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Property relatesToMeasurement Measurement</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test39 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test39">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Measurement relatesToProperty Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test4">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>EnergyConsumption type EnergyProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test40 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test40">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>PriceMeasurement inCurrency Currency</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test5">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>EnergyUseIntensity type EnergyProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test6 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test6">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>EnergyProperty hasSource SourceEnergy</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test7 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test7">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>FuelOil type SourceEnergy</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test8 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test8">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>NaturalGas type SourceEnergy</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test9 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test9">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteEnergy"/>
+        <vtc:desiredBehaviour>Firewood type SourceEnergy</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#TestSuiteEnergy -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#TestSuiteEnergy">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestSuite"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
