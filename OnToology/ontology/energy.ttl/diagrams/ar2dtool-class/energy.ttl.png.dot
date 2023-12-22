@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "energ:CostPriceSeason" "energ:FixedAgreement" "energ:PriceAgreement" "saref:Property" "energ:SourceEnergy" "energ:Price" "core:Building" "core:Municipality" "energ:Season" "saref:UnitOfMeasure" "energ:Currency" "saref:FeatureofInterest" "energ:Consumer" "saref:Measurement" "adapters:Energy" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "energ:CostPriceSeason" "energ:FixedAgreement" "energ:PriceAgreement" "saref:Property" "energ:SourceEnergy" "energ:Price" "adapters:EnergyProperty" "core:Building" "core:Municipality" "energ:Season" "saref:UnitOfMeasure" "energ:Currency" "saref:FeatureofInterest" "energ:Consumer" "saref:Measurement" ; /*classes style*/
 	"energ:" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = "dcterms:license" ];
 	"energ:FixedAgreement" -> "xsd:string" [ label = "energ:contractTime" ];
 	"energ:CostPriceSeason" -> "energ:Season" [ label = "energ:forSeason" ];
@@ -12,14 +12,14 @@ node [shape = rectangle, color="orange"]; "energ:CostPriceSeason" "energ:FixedAg
 	"saref:Measurement" -> "saref:Property" [ label = "saref:relatesToProperty" ];
 	"saref:FeatureofInterest" -> "saref:Property" [ label = "saref:hasProperty" ];
 	"owl:Thing" -> "xsd:string" [ label = "core:name" ];
-	"adapters:Energy" -> "energ:Price" [ label = "energ:hasPrice" ];
+	"adapters:EnergyProperty" -> "energ:Price" [ label = "energ:hasPrice" ];
 	"saref:Measurement" -> "saref:UnitOfMeasure" [ label = "saref:isMeasuredIn" ];
 	"owl:Thing" -> "energ:Currency" [ label = "energ:inCurrency" ];
 	"energ:CostPriceSeason" -> "xsd:float" [ label = "energ:costPrice" ];
 	"energ:PriceAgreement" -> "energ:CostPriceSeason" [ label = "energ:hasCostPrice" ];
 	"energ:Consumer" -> "core:Building" [ label = "energ:hasBuilding" ];
 	"saref:Property" -> "saref:Measurement" [ label = "saref:relatesToMeasurement" ];
-	"adapters:Energy" -> "energ:SourceEnergy" [ label = "energ:hasSource" ];
+	"adapters:EnergyProperty" -> "energ:SourceEnergy" [ label = "energ:hasSource" ];
 	"saref:Property" -> "saref:FeatureofInterest" [ label = "saref:isPropertyOf" ];
 	"owl:Thing" -> "xsd:string" [ label = "core:id" ];
 

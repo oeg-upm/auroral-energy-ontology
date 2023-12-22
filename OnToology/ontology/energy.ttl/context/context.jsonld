@@ -11,6 +11,9 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/energy#hasPrice",
       "@type" : "@id"
     },
+    "EnergyProperty" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#EnergyProperty"
+    },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
     },
@@ -69,9 +72,6 @@
     "hasSource" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/energy#hasSource",
       "@type" : "@id"
-    },
-    "Energy" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy"
     },
     "name" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#name",
